@@ -32,7 +32,7 @@ CONF.testUsers.forEach(({ username, password, expect_login_err_message }) => {
       await page.close();
       return;
     } else {
-      const errorText = isErrorVisible ? await errorMsg.textContent() : ''
+      const errorText = isErrorVisible ? await errorMsg.textContent() : "";
       expect(isErrorVisible, { message: `Login failed: ${errorText}` }).toBe(
         false,
       );

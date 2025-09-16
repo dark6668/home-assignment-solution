@@ -12,7 +12,10 @@ testUsers: Array of users to run the scenario for.
 
 # Run
 
-`yarn run playwright test`
+```
+yarn install
+yarn run playwright test
+```
 
 # Explanation
 
@@ -27,9 +30,11 @@ testUsers: Array of users to run the scenario for.
 - UI inconsistencies, like misplaced elements (`visual_user`), are noted but not treated as failures as the checkout can processed.
 
 **Expected failures (bad behavior):**
+
 - Certain users, like `locked_out_user`, should be prevented from logging in.
 
 **Unexpected failures**
+
 - Users like `problem_user` or `error_user` may encounter form restrictions or cart limitations (e.g., cannot fill the last name or cannot add more than a fixed number of items).
 
 ### Our approach
