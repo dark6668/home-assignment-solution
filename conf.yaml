@@ -1,0 +1,16 @@
+---
+testUsers:
+  - username: standard_user
+    password: secret_sauce
+  - username: locked_out_user
+    expect_login_err_message: true
+    password: secret_sauce
+  - username: problem_user
+    password: secret_sauce
+  - username: performance_glitch_user
+    password: secret_sauce
+  - username: error_user
+    password: secret_sauce
+  - username: visual_user
+    password: secret_sauce
+url: https://www.saucedemo.com/
