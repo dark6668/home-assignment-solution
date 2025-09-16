@@ -14,6 +14,7 @@ testUsers: Array of users to run the scenario for.
 
 ```
 yarn install
+yarn playwright install
 yarn run playwright test
 ```
 
